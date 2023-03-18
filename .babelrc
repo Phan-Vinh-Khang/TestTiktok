@@ -1,0 +1,16 @@
+{
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "alias": {
+                    "@": "./src"
+                }
+            }
+        ]
+    ]
+}
+// char alias sẽ ref vào "./src"
+//   import App from "./App"
+// import App from "./src/App"
+// có thể define nhiều alias
