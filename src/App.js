@@ -1,9 +1,9 @@
 import logo from "./logo.svg";
-import "./App.css";
+import Func from "./test/test"
 function App() {
   return (
     <div className="App">
-      <div></div>
+      <Func></Func>
     </div>
   );
 }

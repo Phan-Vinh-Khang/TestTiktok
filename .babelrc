@@ -4,13 +4,13 @@
             "module-resolver",
             {
                 "alias": {
-                    "@": "./src"
+                    "~": "./src"
                 }
             }
         ]
     ]
 }
-// char alias sẽ ref vào "./src"
-//   import App from "./App"
-// import App from "./src/App"
-// có thể define nhiều alias
+// properties alias sẽ ref vào data "./src"
+// thay vì viết import App from "/src/App"
+// có thể viết import App from "~/App"
+// có thể define nhiều properties alias
