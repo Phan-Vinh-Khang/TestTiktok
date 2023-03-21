@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import WrapCSS from './FuncElements/CSS/index';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
-  <App />
+  <WrapCSS>
+    <App />
+  </WrapCSS>
   // </React.StrictMode> 
 );
 // If you want to start measuring performance in your app, pass a function
