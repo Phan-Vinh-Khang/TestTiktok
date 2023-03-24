@@ -7,7 +7,7 @@ function Content({ children }) {
         <div className={cv('wrapper')}>
             <div className={cv('wrapper-body')}>
                 <Sidebar></Sidebar>
-                <div class={cv('wrap-content')}>
+                <div className={cv('wrap-content')}>
                     {children}
                 </div>
             </div>

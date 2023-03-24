@@ -10,7 +10,8 @@ function App() {
       <div className="App">
         <Routes>
           {
-            ListRoutes.map(item => {
+            ListRoutes.map((item) => {
+
               const dlayout = <></>
               const DefaultLayout = (item.layout === undefined ? MainLayout : item.layout)
               return <Route path={item.path} element=
