@@ -1,17 +1,29 @@
 import { useState, useEffect, useLayoutEffect, useRef, useCallback, useMemo, useReducer, createContext, useContext } from "react";
+import { Fragment } from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from "./pages/Home"
-import Following from "./pages/Following"
+import ListRoutes from "./router/mainRoutes";
+import MainLayout from "./layout/MainLayout"
 function App() {
   return (
     <BrowserRouter>
+      {/* <Header></Header> */}
       <div className="App">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Following" element={<Following />} />
+          {
+            ListRoutes.map(item => {
+              const dlayout = <></>
+              const DefaultLayout = (item.layout === undefined ? MainLayout : item.layout)
+              return <Route path={item.path} element=
+                {
+                  <DefaultLayout>
+                    {item.element}
+                  </DefaultLayout>
+                } />
+            })
+          }
         </Routes>
       </div>
-    </BrowserRouter>
+    </BrowserRouter >
   );
 }
 export default App;

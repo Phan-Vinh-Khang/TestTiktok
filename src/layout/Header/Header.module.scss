@@ -1,0 +1,13 @@
+.wrap-header {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    box-shadow: 0px 1px 1px rgb(0 0 0/12%);
+}
+
+$default-width-header: 90%;
+
+.wrap-header-content {
+    width: $default-width-header;
+    background-color: bisque;
+}
