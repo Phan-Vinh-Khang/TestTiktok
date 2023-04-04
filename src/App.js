@@ -11,9 +11,8 @@ function App() {
         <Routes>
           {
             ListRoutes.map((item) => {
-
               const dlayout = <></>
-              const DefaultLayout = (item.layout === undefined ? MainLayout : item.layout)
+              const DefaultLayout = (item.layout2 === undefined ? MainLayout : item.layout2)
               return <Route path={item.path} element=
                 {
                   <DefaultLayout>
