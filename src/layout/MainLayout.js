@@ -5,7 +5,7 @@ function MainLayout({ children }) {
     return (
         <div>
             <Header></Header>
-            <Content children2={children} />
+            <Content children={children}></Content>
         </div>
     )
 }

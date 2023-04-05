@@ -8,7 +8,7 @@ function Content(obj) {
             <div className={cv('wrapper-body')}>
                 <Sidebar></Sidebar>
                 <div className={cv('wrap-content')}>
-                    {obj.children2}
+                    {obj.children}
                 </div>
             </div>
         </div>
