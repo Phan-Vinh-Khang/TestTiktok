@@ -4,13 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import WrapCSS from "./MainCSS/index"
+import { BrowserRouter } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  // <React.StrictMode>
-  <WrapCSS>
-    <App />
-  </WrapCSS>
-  // </React.StrictMode> 
+  <BrowserRouter>
+    {/* <React.StrictMode> */}
+    <WrapCSS>
+      <App />
+    </WrapCSS>
+    {/* </React.StrictMode>  */}
+  </BrowserRouter>
 );
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
